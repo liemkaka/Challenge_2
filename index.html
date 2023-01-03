@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="img/icon.png">
+    <!-------------- Font ----------------->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200;300;400;500;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-------------- CSS ------------------>
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.2.1/css/all.css">
+    <link rel="stylesheet" href="slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/animation.css">
+    <link rel="stylesheet" href="./css/slide.css">
+    <link rel="stylesheet" href="fontawesome-free-6.1.1-web/css/all.min.css">
+    <title>Pokémon Site</title>
+</head>
+
+<body>
+    <!---------------------- Nav ----------------------------->
+    <nav class="flex-box">
+        <div class="nav-logo"><a href="#"><img src="./img/International_Pokémon_logo.svg.png" alt=""></a></div>
+        <ul class="nav-main">
+            <li><a href="#">Home</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="#">Pokedex</a>
+                <div class="nav-sub">
+                    <ul class="nav-proto">
+                        <li><a href="#">National Pokedex</a></li>
+                        <li><a href="#">Gen I Pokedex</a></li>
+                        <li><a href="#">Gen II Pokedex</a></li>
+                        <li><a href="#">Gen III Pokedex</a></li>
+                        <li><a href="#">Gen IV Pokedex</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="#">Directory</a></li>
+            <li><a href="#">Movies</a></li>
+            <li><a href="#">More</a></li>
+        </ul>
+        <div class="search-box">
+            <button class="btn-search"><i class="fas fa-search"></i></button>
+            <input type="text" class="input-search" placeholder="Type to Search...">
+        </div>
+    </nav>
+    <!---------------------- Slide ----------------------------->
+    <!-- <section class="slide">
+        <div class="slide-site">
+            <div class="slide-item">
+                <img src="./img/bg_1.jpg" alt="">
+            </div>
+            <div class="slide-item">
+                <img src="./img/bg_2.jpg" alt="">
+            </div>
+            <div class="slide-item">
+                <img src="./img/bg_3.jpg" alt="">
+            </div>
+            <div class="slide-item">
+                <img src="./img/bg_4.jpg" alt="">
+            </div>
+        </div>
+    </section> -->
+
+    <div class="slider__warpper">
+        <div class="flex__container flex--pikachu flex--active" data-slide="1">
+            <div class="flex__item flex__item--left">
+                <div class="flex__content">
+                    <p class="text--sub">Pokemon Gen I</p>
+                    <h1 class="text--big">Pikachu</h1>
+                    <p class="text--normal">Pikachu is an Electric-type Pokémon introduced in Generation I. Pikachu are
+                        small, chubby, and incredibly cute mouse-like Pokémon. They are almost completely covered by
+                        yellow fur.</p>
+                </div>
+                <p class="text__background">Pikachu</p>
+            </div>
+            <div class="flex__item flex__item--right"></div>
+            <img class="pokemon__img" src="./img/025.png" />
+        </div>
+        <div class="flex__container flex--piplup animate--start" data-slide="2">
+            <div class="flex__item flex__item--left">
+                <div class="flex__content">
+                    <p class="text--sub">Pokemon Gen IV</p>
+                    <h1 class="text--big">Piplup</h1>
+                    <p class="text--normal">Piplup is the Water-type Starter Pokémon of the Sinnoh region. It was
+                        introduced in Generation IV. Piplup has a strong sense of self-esteem. It seldom accepts food
+                        that people give because of its pride.</p>
+                </div>
+                <p class="text__background">Piplup</p>
+            </div>
+            <div class="flex__item flex__item--right"></div>
+            <img class="pokemon__img" src="./img/393.png" />
+        </div>
+        <div class="flex__container flex--blaziken animate--start" data-slide="3">
+            <div class="flex__item flex__item--left">
+                <div class="flex__content">
+                    <p class="text--sub">Pokemon Gen III</p>
+                    <h1 class="text--big">Blaziken</h1>
+                    <p class="text--normal">Blaziken is the Fire/Fighting-type Starter Pokémon of the Hoenn region,
+                        introduced in Generation III. Blaziken is a large, bipedal, humanoid bird-like Pokémon that
+                        resembles a rooster.</p>
+                </div>
+                <p class="text__background">Blaziken</p>
+            </div>
+            <div class="flex__item flex__item--right"></div>
+            <img class="pokemon__img" src="./img/257.png" />
+        </div>
+        <div class="flex__container flex--dialga animate--start" data-slide="4">
+            <div class="flex__item flex__item--left">
+                <div class="flex__content">
+                    <p class="text--sub">Pokemon Gen IV</p>
+                    <h1 class="text--big">Dialga</h1>
+                    <p class="text--normal">Dialga is a Steel/Dragon-type Legendary Pokémon. Dialga is a sauropod-like
+                        Pokémon. It is mainly blue with some gray, metallic portions, such as its chest plate, which has
+                        a diamond in the center. It also has various, light blue lines all over
+                        its body.</p>
+                </div>
+                <p class="text__background">Dialga</p>
+            </div>
+            <div class="flex__item flex__item--right"></div>
+            <img class="pokemon__img" src="./img/483.png" />
+        </div>
+        <div class="flex__container flex--zekrom animate--start" data-slide="5">
+            <div class="flex__item flex__item--left">
+                <div class="flex__content">
+                    <p class="text--sub">Pokemon Gen V</p>
+                    <h1 class="text--big">Zekrom</h1>
+                    <p class="text--normal">Zekrom is a Dragon/Electric-type Legendary Pokémon. It is part of the Tao
+                        Trio, along with Reshiram and Kyurem. Zekrom is a large, black draconian Pokémon that seems to
+                        share its theme with its counterpart, Reshiram. It has piercing red eyes and
+                        dark gray to black skin that seems to be armor-like.</p>
+                </div>
+                <p class="text__background">Zekrom</p>
+            </div>
+            <div class="flex__item flex__item--right"></div>
+            <img class="pokemon__img" src="./img/644.png" />
+        </div>
+    </div>
+
+    <div class="slider__navi">
+        <a href="#" class="slide-nav active" data-slide="1">pikachu</a>
+        <a href="#" class="slide-nav" data-slide="2">piplup</a>
+        <a href="#" class="slide-nav" data-slide="3">blaziken</a>
+        <a href="#" class="slide-nav" data-slide="4">dialga</a>
+        <a href="#" class="slide-nav" data-slide="5">zekrom</a>
+    </div>
+    <!---------------------- News ----------------------------->
+    <section class="news">
+        <div class="news-title">
+            <h2>What's News</h2>
+            <div class="news-item flex-box mg-5">
+                <div class="news-item--list">
+                    <div class="news-item__img"><img src="./img/news_1.webp" alt=""></div>
+                    <div class="news-item__content">
+                        <span class="news-item__heading">*Pokémon Scarlet & Violet released!*</span>
+                        <span class="news-item__calc">Pokémon Scarlet & Violet — 17 November, 2022</span>
+                        <p>The newest games in the Pokémon franchise, Pokémon Scarlet & Pokémon Violet are starting to
+                            be
+                            released around the world! As usual we are busy cataloguing all the new information for the
+                            games
+                            such as new Pokémon, moves, abilities and locations...</p>
+                    </div>
+                    <a href="#" class="btn btn-read">Read more &nbsp;<i class="fa-solid fa-chevron-right"></i></a>
+                </div>
+                <div class="news-item--list">
+                    <div class="news-item__img"><img src="./img/news_2.png" alt=""></div>
+                    <div class="news-item__content">
+                        <span class="news-item__heading">*New Pokémon Animated Series Is Coming!*</span>
+                        <span class="news-item__calc">Pokémon Animation — 17 December, 2022</span>
+                        <p>At the beginning of this month, a regular monthly press conference from TV Tokyo confirmed
+                            that Ash's anime adventures would be continuing, and said that more information would be
+                            released with a future anime broadcast....</p>
+                    </div>
+                    <a href="#" class="btn btn-read">Read more &nbsp;<i class="fa-solid fa-chevron-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!---------------------- TCG ----------------------------->
+    <section class="tcg flex-box">
+        <div class="tcg-box">
+            <img src="./img/tcg-box.png" alt="" class="tcg-card c-1">
+            <img src="./img/tcg-card.jpg" alt="" class="tcg-card c-2">
+            <img src="./img/tcg-items.png" alt="" class="tcg-card c-3">
+        </div>
+        <div class="tcg-content">
+            <h2>EASY TO LEARN, FUN TO PLAY!</h2>
+            <span class="tcg-content__span">Begin your Pokémon Trading Card Game adventure with Pokémon TCG Battle
+                Academy.</span>
+            <p class="tcg-content__des">This all-in-one collection has everything you need to get started
+                playing,including three complete Pokémon TCG decks and easy-to-follow instructions.</p>
+            <div class="tcg-content__des-2">
+                <img src="./img/tcg-logo-2.png" alt="">
+                <a href="#" class="btn btn-read">Read more &nbsp;<i class="fa-solid fa-chevron-right"></i></a>
+            </div>
+        </div>
+    </section>
+    <!---------------------- Products ----------------------------->
+    <section class="pd">
+        <h2 class="pd-heading">Popular Product</h2>
+        <div class="pd-slider flex-box mg-5">
+            <div class="pd-cards">
+                <img src="./img/doll-1.png" alt="">
+                <div class="pd-cards__content flex-box pika-b">
+                    <span class="pd-cards__heading">Pikachu Doll version 2022</span>
+                    <p class="pd-cards__saled"><span class="pd-cards__sale">20.0$</span>&nbsp;&nbsp;<i
+                            class="fa-solid fa-arrow-right"></i>&nbsp; 10.0$</p>
+                </div>
+                <div class="pd-cards_shop">
+                    <a href="#" class="shop"><i class="fa-solid fa-cart-shopping"></i></a>
+                    <a href="#" class="shop"><i class="fa-solid fa-heart"></i></a>
+                    <a href="#" class="shop"><i class="fa-solid fa-magnifying-glass"></i></a>
+                </div>
+                <div class="sale">
+                    <p>SALE</p>
+                </div>
+            </div>
+            <div class="pd-cards ee">
+                <img src="./img/doll-2.png" alt="" class="eevee">
+                <div class="pd-cards__content flex-box eev-b">
+                    <span class="pd-cards__heading">Eevee Doll version 2022</span>
+                    <p>20.0$</p>
+                </div>
+                <div class="pd-cards_shop">
+                    <a href="#" class="shop"><i class="fa-solid fa-cart-shopping"></i></a>
+                    <a href="#" class="shop"><i class="fa-solid fa-heart"></i></a>
+                    <a href="#" class="shop"><i class="fa-solid fa-magnifying-glass"></i></a>
+                </div>
+            </div>
+            <div class="pd-cards char">
+                <img src="./img/doll-3.png" alt="" class="charmander">
+                <div class="pd-cards__content flex-box charm-b">
+                    <span class="pd-cards__heading">Charmander Doll version 2022</span>
+                    <p>20.0$</p>
+                </div>
+                <div class="pd-cards_shop">
+                    <a href="#" class="shop"><i class="fa-solid fa-cart-shopping"></i></a>
+                    <a href="#" class="shop"><i class="fa-solid fa-heart"></i></a>
+                    <a href="#" class="shop"><i class="fa-solid fa-magnifying-glass"></i></a>
+                </div>
+            </div>
+            <div class="pd-cards sq">
+                <img src="./img/doll-4.png" alt="" class="charmander">
+                <div class="pd-cards__content flex-box sq-b">
+                    <span class="pd-cards__heading">Squirtle Doll version 2022</span>
+                    <p>20.0$</p>
+                </div>
+                <div class="pd-cards_shop">
+                    <a href="#" class="shop"><i class="fa-solid fa-cart-shopping"></i></a>
+                    <a href="#" class="shop"><i class="fa-solid fa-heart"></i></a>
+                    <a href="#" class="shop"><i class="fa-solid fa-magnifying-glass"></i></a>
+                </div>
+            </div>
+            <div class="pd-cards">
+                <img src="./img/pd-1.png" alt="" class="charmander">
+                <div class="pd-cards__content flex-box pika-b">
+                    <span class="pd-cards__heading">Pokéball Keychain v9.1</span>
+                    <p>2.0$</p>
+                </div>
+                <div class="pd-cards_shop">
+                    <a href="#" class="shop"><i class="fa-solid fa-cart-shopping"></i></a>
+                    <a href="#" class="shop"><i class="fa-solid fa-heart"></i></a>
+                    <a href="#" class="shop"><i class="fa-solid fa-magnifying-glass"></i></a>
+                </div>
+            </div>
+            <div class="pd-cards">
+                <img src="./img/pd-2.png" alt="">
+                <div class="pd-cards__content flex-box pika-b">
+                    <span class="pd-cards__heading">Rotom Phone case</span>
+                    <p>15.0$</p>
+                </div>
+                <div class="pd-cards_shop">
+                    <a href="#" class="shop"><i class="fa-solid fa-cart-shopping"></i></a>
+                    <a href="#" class="shop"><i class="fa-solid fa-heart"></i></a>
+                    <a href="#" class="shop"><i class="fa-solid fa-magnifying-glass"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!---------------------- Anime ----------------------------->
+    <section class="anime">
+        <div class="anime-content">
+            <h2 class="anime_heading">Films <small>&</small> Movies</h2>
+            <div class="flex-box">
+                <div class="anime-img">
+                    <!-- <img src="./img/anime.jpg" alt=""> -->
+                    <video id="video" controls poster="./img/anime.jpg">
+                        <source src="./img/Pokémon Journeys_ The Series _ Official Trailer.mp4" type="video/mp4">
+                    </video>
+                    <img id="play" class="btn-play" src="./img/youtube.png" alt="" onclick="closeButton()">
+                </div>
+                <div class="anime-title">
+                    <h2>Pokémon Journeys: The Series</h2>
+                    <button class="btn-special blue">Animation</button>
+                    <button class="btn-special brown">Adventure</button>
+                    <button class="btn-special yellow">Comedy</button>
+                    <p>Pokémon Trainer Ash Ketchum has a new plan: see the world! But first, he and his partner Pikachu
+                        are
+                        headed to the opening of the Cerise Laboratory, a research facility dedicated to uncovering the
+                        mysteries of Pokémon in every region. Ash meets Goh, another boy with boundless curiosity about
+                        Pokémon, and both are overjoyed when Professor Cerise asks them to become official research
+                        fellows.
+                        With Ash as determined as ever to become a Pokémon Master, and Goh aiming to catch one of every
+                        Pokémon (including the Mythical Mew), our heroes are in for adventure and excitement as they
+                        explore
+                        the wide world of Pokémon!</p>
+                    <a href="#" class="btn btn-read">Watch now!</a>
+                </div>
+            </div>
+            <h2 class="movie_heading"><i class="fa-solid fa-film"></i> Most watched Movies</h2>
+            <!--------------- Movies --------------->
+            <div class="anime-movies flex-box">
+                <div class="anime-movies_card">
+                    <div class="anime-movies_poster">
+                        <img src="./img/movie_1.jpg" alt="">
+                    </div>
+                    <div class="anime-movies_detail">
+                        <h3>Pokémon The Movie: Secrets of the Jungle</h3>
+                        <h4>Directed by Yajima Tetsuo</h4>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <span>4/5</span>
+                        </div>
+                        <div class="info">
+                            <p>Pokémon the Movie: Secrets of the Jungle is a 2020 Japanese anime film based on
+                                Satoshi Tajiri's Pokémon media franchise and produced by OLM. It is the twenty-third and
+                                most recent film in the Pokémon universe, the third film in the Alternate Timeline
+                                series covering Generation VIII.</p>
+                        </div>
+                        <div class="tags">
+                            <a href="#" class="anime_btn-play"><i class="fa-solid fa-play"></i><span>Watch
+                                    Trailer</span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="anime-movies_card">
+                    <div class="anime-movies_poster">
+                        <img src="./img/movie_2.jpg" alt="">
+                    </div>
+                    <div class="anime-movies_detail movie-2">
+                        <h3>Pokémon The Movie: The Power of Us</h3>
+                        <h4>Directed by Yajima Tetsuo</h4>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <span>4/5</span>
+                        </div>
+                        <div class="info">
+                            <p>Pokémon the Movie: The Power of Us is a 2018 Japanese anime adventure film based on
+                                Satoshi Tajiri's Pokémon media franchise, produced by OLM and Wit Studio and
+                                distributed by Toho. It is the twenty-first film in the Pokémon universe and the second
+                                film in the Alternate Timeline series.</p>
+                        </div>
+                        <div class="tags">
+                            <a href="#" class="anime_btn-play"><i class="fa-solid fa-play"></i><span>Watch
+                                    Trailer</span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="anime-movies_card">
+                    <div class="anime-movies_poster">
+                        <img src="./img/movie_4.png" alt="">
+                    </div>
+                    <div class="anime-movies_detail movie-3">
+                        <h3>Pokémon The Movie: I Choose You!</h3>
+                        <h4>Directed by Kunihiko Yuyama</h4>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <span>4/5</span>
+                        </div>
+                        <div class="info">
+                            <p>Pokémon the Movie: I Choose You! is a 2017 Japanese animated adventure film and the
+                                20th film in the Pokémon anime series created by Satoshi Tajiri and produced by OLM.
+                                Loosely adapted from the anime's pilot episode of the same name and much of the first
+                                season, it was directed by Kunihiko Yuyama and written by Shoji Yonemura.</p>
+                        </div>
+                        <div class="tags">
+                            <a href="#" class="anime_btn-play"><i class="fa-solid fa-play"></i><span>Watch
+                                    Trailer</span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="anime-movies_card">
+                    <div class="anime-movies_poster">
+                        <img src="./img/movie_3.jpg" alt="">
+                    </div>
+                    <div class="anime-movies_detail">
+                        <h3>Pokémon: Detective Pikachu</h3>
+                        <h4>Directed by Rob Letterman</h4>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <span>4/5</span>
+                        </div>
+                        <div class="info">
+                            <p>The story begins when ace detective Harry Goodman goes mysteriously missing, prompting
+                                his 21-year-old son Tim to find out what happened. Aiding in the investigation is
+                                Harry's former Pokémon partner, Detective Pikachu: a hilariously wise-cracking, adorable
+                                super-sleuth who is a puzzlement even to himself.</p>
+                        </div>
+                        <div class="tags">
+                            <a href="#" class="anime_btn-play"><i class="fa-solid fa-play"></i><span>Watch
+                                    Trailer</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!---------------------- Game ----------------------------->
+    <section class="game">
+        <div class="game-bg flex-box">
+            <h2>Pokémon Scarlet & Violet has arrived</h2>
+            <img class="ps-1" src="/img/char-1.png" alt="">
+            <img class="ps-2" src="/img/char-2.png" alt="">
+            <p>Pokémon Scarlet and Pokémon Violet offer an open-world experience that only the Pokémon series can
+                deliver—one welcoming even to newcomers to the series.</p>
+            <a href="#" class="btn btn-grad">Download</a>
+            <img class="pk-1" src="/img/pkm-1.png" alt="">
+            <img class="pk-2" src="/img/pkm-2.png" alt="">
+            <img class="pk-3" src="/img/pkm-3.png" alt="">
+            <div class="game-logo">
+                <div class="scarlet">
+                    <img src="/img/pokemon-scarlet-logo-medium-up.webp" alt="">
+                </div>
+                <div class="violet">
+                    <img src="/img/pokemon-violet-logo-medium-up.webp" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="footer">
+        <div class="footer-bg">
+            <h2>SSSSSSSdsdasdasd</h2>
+        </div>
+    </section>
+    <script type="text/javascript" src="jquery.fitvids.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick-1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+</body>
+
+</html>
