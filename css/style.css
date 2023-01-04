@@ -836,6 +836,7 @@ nav .nav-main li:nth-child(3) a:active .nav-sub {
 .game-bg p {
   color: white;
   font-family: var(--Ubuntu);
+  font-weight: 400;
   width: 60%;
   text-align: center;
   font-size: 1.2rem;
