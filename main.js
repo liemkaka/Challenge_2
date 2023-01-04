@@ -1,3 +1,4 @@
+AOS.init();
 $(document).ready(function () {
   $(".pd-slider").slick({
     infinite: true,
@@ -46,6 +47,8 @@ function closeButton(){
   var vid = document.getElementById("video");
   vid.play();
 }
+
+
 
 
 

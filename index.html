@@ -18,6 +18,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
     <!-------------- CSS ------------------>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.2.1/css/all.css">
     <link rel="stylesheet" href="slick-1.8.1/slick/slick.css">
@@ -158,9 +159,10 @@
     <!---------------------- News ----------------------------->
     <section class="news">
         <div class="news-title">
-            <h2>What's News</h2>
+            <h2 data-aos="fade-down">What's News</h2>
             <div class="news-item flex-box mg-5">
-                <div class="news-item--list">
+                <div class="news-item--list" data-aos="fade-right" data-aos-anchor="#example-anchor"
+                    data-aos-offset="500" data-aos-duration="2000">
                     <div class="news-item__img"><img src="./img/news_1.webp" alt=""></div>
                     <div class="news-item__content">
                         <span class="news-item__heading">*Pokémon Scarlet & Violet released!*</span>
@@ -173,7 +175,8 @@
                     </div>
                     <a href="#" class="btn btn-read">Read more &nbsp;<i class="fa-solid fa-chevron-right"></i></a>
                 </div>
-                <div class="news-item--list">
+                <div class="news-item--list" data-aos="fade-left" data-aos-anchor="#example-anchor"
+                    data-aos-offset="500" data-aos-duration="2000">
                     <div class="news-item__img"><img src="./img/news_2.png" alt=""></div>
                     <div class="news-item__content">
                         <span class="news-item__heading">*New Pokémon Animated Series Is Coming!*</span>
@@ -190,11 +193,11 @@
     <!---------------------- TCG ----------------------------->
     <section class="tcg flex-box">
         <div class="tcg-box">
-            <img src="./img/tcg-box.png" alt="" class="tcg-card c-1">
-            <img src="./img/tcg-card.jpg" alt="" class="tcg-card c-2">
-            <img src="./img/tcg-items.png" alt="" class="tcg-card c-3">
+            <img src="./img/tcg-box.png" alt="" class="tcg-card c-1" data-aos="zoom-in">
+            <img src="./img/tcg-card.jpg" alt="" class="tcg-card c-2" data-aos="flip-left" data-aos-duration="2000">
+            <img src="./img/tcg-items.png" alt="" class="tcg-card c-3" data-aos="zoom-out">
         </div>
-        <div class="tcg-content">
+        <div class="tcg-content" data-aos="fade-up-left">
             <h2>EASY TO LEARN, FUN TO PLAY!</h2>
             <span class="tcg-content__span">Begin your Pokémon Trading Card Game adventure with Pokémon TCG Battle
                 Academy.</span>
@@ -208,7 +211,7 @@
     </section>
     <!---------------------- Products ----------------------------->
     <section class="pd">
-        <h2 class="pd-heading">Popular Product</h2>
+        <h2 class="pd-heading" data-aos="fade-up">Popular Product</h2>
         <div class="pd-slider flex-box mg-5">
             <div class="pd-cards">
                 <img src="./img/doll-1.png" alt="">
@@ -291,16 +294,16 @@
     <!---------------------- Anime ----------------------------->
     <section class="anime">
         <div class="anime-content">
-            <h2 class="anime_heading">Films <small>&</small> Movies</h2>
+            <h2 class="anime_heading" data-aos="fade-up">Films <small>&</small> Movies</h2>
             <div class="flex-box">
-                <div class="anime-img">
+                <div class="anime-img" data-aos="fade-left">
                     <!-- <img src="./img/anime.jpg" alt=""> -->
                     <video id="video" controls poster="./img/anime.jpg">
                         <source src="./img/Pokémon Journeys_ The Series _ Official Trailer.mp4" type="video/mp4">
                     </video>
                     <img id="play" class="btn-play" src="./img/youtube.png" alt="" onclick="closeButton()">
                 </div>
-                <div class="anime-title">
+                <div class="anime-title" data-aos="fade-right">
                     <h2>Pokémon Journeys: The Series</h2>
                     <button class="btn-special blue">Animation</button>
                     <button class="btn-special brown">Adventure</button>
@@ -318,9 +321,9 @@
                     <a href="#" class="btn btn-read">Watch now!</a>
                 </div>
             </div>
-            <h2 class="movie_heading"><i class="fa-solid fa-film"></i> Most watched Movies</h2>
+            <h2 class="movie_heading" data-aos="fade-down"><i class="fa-solid fa-film"></i> Most watched Movies</h2>
             <!--------------- Movies --------------->
-            <div class="anime-movies flex-box">
+            <div class="anime-movies flex-box" data-aos="fade-left">
                 <div class="anime-movies_card">
                     <div class="anime-movies_poster">
                         <img src="./img/movie_1.jpg" alt="">
@@ -435,15 +438,18 @@
     <!---------------------- Game ----------------------------->
     <section class="game">
         <div class="game-bg flex-box">
-            <h2>Pokémon Scarlet & Violet has arrived</h2>
-            <img class="ps-1" src="/img/char-1.png" alt="">
-            <img class="ps-2" src="/img/char-2.png" alt="">
-            <p>Pokémon Scarlet and Pokémon Violet offer an open-world experience that only the Pokémon series can
+            <h2 data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom">Pokémon Scarlet & Violet has arrived</h2>
+            <img class="ps-1" src="/img/char-1.png" alt="" data-aos="zoom-in-up">
+            <img class="ps-2" src="/img/char-2.png" alt="" data-aos="fade-right">
+            <p data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom">Pokémon Scarlet and Pokémon Violet offer an open-world experience that only the Pokémon series can
                 deliver—one welcoming even to newcomers to the series.</p>
-            <a href="#" class="btn btn-grad">Download</a>
-            <img class="pk-1" src="/img/pkm-1.png" alt="">
-            <img class="pk-2" src="/img/pkm-2.png" alt="">
-            <img class="pk-3" src="/img/pkm-3.png" alt="">
+            <a data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom" href="#" class="btn btn-grad">Download</a>
+            <img class="pk-1" src="/img/pkm-1.png" alt="" data-aos="zoom-in-up">
+            <img class="pk-2" src="/img/pkm-2.png" alt="" data-aos="zoom-in-up">
+            <img class="pk-3" src="/img/pkm-3.png" alt="" data-aos="zoom-in-up">
             <div class="game-logo">
                 <div class="scarlet">
                     <img src="/img/pokemon-scarlet-logo-medium-up.webp" alt="">
@@ -454,6 +460,7 @@
             </div>
         </div>
     </section>
+    <!---------------------- Footer ----------------------------->
     <section class="footer">
         <div class="footer-bg flex-box">
             <div class="footer-brand">
@@ -490,6 +497,8 @@
             </p>
         </div>
     </section>
+    <!-- Javascript -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script type="text/javascript" src="jquery.fitvids.js"></script>
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
