@@ -13,6 +13,19 @@ $(document).ready(function () {
     nextArrow:
       '<div class="slick-next"><i class="fa fa-angle-right" aria-hidden="true"></i></div>',
   });
+  $(".slider").slick({
+    infinite: true,
+    dots: false,
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    arrows: false,
+    prevArrow:
+      '<div class="slick-prev"><i class="fa fa-angle-left" aria-hidden="true"></i></div>',
+    nextArrow:
+      '<div class="slick-next"><i class="fa fa-angle-right" aria-hidden="true"></i></div>',
+  });
 });
 $(".slide-nav").on("click", function (e) {
   e.preventDefault();
