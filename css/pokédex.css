@@ -1,0 +1,74 @@
+:root {
+    --light-b: rgb(240,240,240);
+    --gray: #737373;
+    --gray-x: #ededed;
+    --light-o: rgba(255, 255, 255, 0.2);
+    --black-o: #444444;
+    --black-l: rgb(26, 26, 26);
+    --blue: #2838a0;
+    --yellow: #ffcc01;
+    --evee: #844c28;
+    --charmander: #fa8d2e;
+    --water: #4ABDCB;
+    --fire: #CA522D;
+    --grass: #53A033;
+    /*----------------- Font --------------- */
+    --Fira: "Fira Sans", sans-serif;
+    --Ubuntu: "Ubuntu", sans-serif;
+}
+.pd-2{
+    padding-bottom: 2rem;
+}
+.dex{
+    /* margin-bottom: 1rem; */
+}
+.dex-heading{
+    text-align: center;
+    font-family: var(--Fira);
+    font-weight: 700;
+    font-size: 2.5rem;
+    padding: 1.5rem 0;
+}
+.dex-container{
+    background-color: var(--light-b);
+    height: auto;
+    max-height: 100%;
+    border-radius: 10px;
+    padding: 1.25rem;
+}
+.dex-container h2{
+    font-family: var(--Fira);
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 2;
+}
+.dex-container p{
+    font-family: var(--Fira);
+    line-height: 1.5;
+}
+.dex-container ul{
+    list-style: square;
+    font-family: var(--Ubuntu);
+    padding: 1rem 0 1rem 2.25rem;
+}
+.dex-container ul li{
+    line-height: 1.5;
+}
+.dex-container ul span{
+    color: var(--black-o);
+}
+.dex-container ul a:hover{
+    color: var(--yellow);
+    text-decoration: underline;
+}
+.gen-img{
+    align-items: center;
+    gap: 5rem;
+}
+.gen-img img{
+    width: 500px;
+}
+.fs{
+    width: 200px !important;
+    margin-right: 1.5rem;
+}

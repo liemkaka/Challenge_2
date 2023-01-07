@@ -321,10 +321,15 @@ body {
   font-family: var(--Ubuntu);
 }
 .newest-content__write p {
+  line-height: 1.4;
   text-align: justify;
 }
 .newest-content__write p:not(.p-head) {
   margin: 1rem 0 0 0;
+}
+.newest-content__write a{
+  color: var(--blue);
+  text-decoration: underline;
 }
 .wr-grap {
   margin-top: 1rem;
